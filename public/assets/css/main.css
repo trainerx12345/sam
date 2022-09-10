@@ -1,0 +1,237 @@
+*,html,body
+{
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    overflow-x: hidden;
+ 
+}
+body
+{
+    background:#F2EFE6;
+    color: #134e63;
+    height: 410vh;
+}
+a
+{
+    text-decoration: none;
+    font-size: 1rem;
+    color:#333cc0;
+}
+
+
+/* Header */
+.header-container
+{
+    background-color: grey;
+}
+
+
+/* NAVIGATION BAR */
+.nav-container
+{
+    z-index:2;
+    display: grid;
+    grid-auto-flow: column;
+    max-height: 10rem;
+    box-shadow: 0 6px 1px rgba(8, 8, 8,0.2);
+    border-bottom: #333cc0 1px double;
+    align-items: center;
+    position: fixed;
+    background: #eee;
+    width: 100%;
+    border-radius: 1.4em;
+    -webkit-border-radius: 1.4em;
+    -moz-border-radius: 1.4em;
+    -ms-border-radius: 1.4em;
+    -o-border-radius: 1.4em;
+}
+.logo-container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+.logo-title
+{
+  padding:0 0.5rem 0 1rem;
+  border-bottom:#333cc0 3px double;
+
+}
+.logo-img
+{
+    padding: 0.1rem;
+    max-width: 5rem;
+    filter: grayscale(100%) brightness(130%);
+    -webkit-filter: grayscale(100%) brightness(130%);
+}
+/* Menu Bar */
+.menu-container
+{
+    margin: 0 2rem;
+
+    display: flex;
+    justify-self: right;
+    /* background-color: pink; */
+}
+.menu_items
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu_items li
+{
+    padding:0.5rem;
+    list-style: none;
+}
+
+/* MAIN CONTENT / Home section */
+
+
+#_home
+{
+    background: url('../images/_main_content.jpeg');
+    background-size: cover;
+}
+.title_main
+{
+    color: #333cc0;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    padding-top: 40vh;
+    margin: auto;
+    height: 100vh;
+}
+
+.title_name_container
+{
+     /* width: 50%; */
+    margin: 0 auto 0 auto ; 
+}
+
+
+.title_name
+{
+ 	font-family: 'Courier New', Courier, monospace;
+ 	color: #134e63;
+ 	font-size: 6rem;
+ 	font-weight:560;
+ 	display: inline-block;
+ 	overflow: hidden;
+ 	letter-spacing: 1.5px;
+ 	animation: typing 5s steps(9,end), _blink .75s step-end infinite;
+ 	white-space: nowrap;
+ 	border-right:2px solid;
+ 	box-sizing: border-box;
+ 	-webkit-animation: typing 5s steps(9,end), _blink .75s step-end infinite;
+}
+
+.__sub-title
+{
+    border-bottom: #696969 3px double;
+    font-size: 1.3rem;
+    font-weight: normal;
+    
+}
+
+/* End of home section */
+
+/* About section */
+#_about
+{
+    background-color:#333cc0;
+    height: 100vh;
+}
+/* End of About Section */
+
+/* Project section */
+#_projects
+{
+    background-color:#eee;
+    height: 100vh;
+}
+/* End of Project Section */
+
+/* Contact section */
+#_contact
+{
+    background-color:#333cc0;
+    height: 100vh;
+}
+/* End of Contact Section */
+
+    /*TYPEWRITER - STYLE*/
+@keyframes typing
+{
+    from { 
+        width: 0% ;
+    }
+    to { 
+        width: 100% ;
+    }
+}
+@keyframes _blink {
+    from, to { 
+        border-color: transparent 
+    }
+    75% { 
+        border-color: #eee; 
+    }
+}
+@keyframes _easetransition {
+    transition
+    {
+    transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    }
+}
+
+/* Clearfix */
+.clearfix,
+.clearfix::after,
+.clearfix::before {
+  display: table;
+  content: " ";
+}
+.clearfix::after {
+  clear: both;
+}
+/* End of clearfix */
+
+
+/* FOOTER */
+
+footer
+{
+    background-color: red;
+    height: 10vh;
+
+
+}
+.footer_sub-container
+{
+    display: flex;
+    flex-flow: column wrap;
+
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    clear: both;
+    padding-top: 100px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
