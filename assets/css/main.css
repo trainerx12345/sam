@@ -25,11 +25,7 @@ body {
     -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-=======
     font-family: caraque-melted, sans-serif;
->>>>>>> 1fa76d16b2d4d5862df6f769903870ba061634d2
     overflow-x: hidden;
     scroll-behavior: smooth;
     transition: var(--eas_in_out);
