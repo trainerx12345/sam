@@ -20,8 +20,7 @@ body {
     -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: cursive;
+    font-family: caraque-melted, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
     transition: var(--eas_in_out);
@@ -75,12 +74,19 @@ li {
     padding-left: 3px;
     position: fixed;
     display: block;
-    bottom: 2px;
-    left: 2px;
+    bottom: 250px;
+    right: 2px;
 }
 
 
-
+.nav-id-scrolled{
+    background-color: #1D2A35 !important;
+    transition: background-color 200ms linear;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+}
 
 ._icons {
     place-items: center;
@@ -109,9 +115,13 @@ li {
     max-height: 10rem;
     align-items: center;
     position: fixed;
-    background-color: transparent;
+
     width: 100%;
     z-index: 2;
+}
+.nav_transparent
+{
+    background-color: transparent;
 }
 
 .logo-container {
@@ -302,7 +312,7 @@ li {
 /* serviceS section */
 #_services {
     background-color: rgba(24, 36, 46, 0.9);
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 3rem 1rem 1rem;
 }
 
 .services_title {
