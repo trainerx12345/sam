@@ -11,6 +11,11 @@
     width: 0px;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(./trial/CaraqueVF_Trial_WghtMelt);
+}
+
 
 *,
 html,
@@ -21,7 +26,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-family: cursive;
     overflow-x: hidden;
     scroll-behavior: smooth;
     transition: var(--eas_in_out);
